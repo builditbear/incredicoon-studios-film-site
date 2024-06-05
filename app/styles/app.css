@@ -1,1 +1,36 @@
 /* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
+body {
+    background-color: #d7cbcf;
+}
+
+.navbar {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-site-links {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+}
+
+.navbar-site-links > a:not(:last-child) {
+    margin-right: 3vw;
+}
+
+.navbar-social-media-links {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.navbar-social-media-links > a:not(:first-child) {
+    margin-left: 1vw;
+}
+
+.site-logo img {
+    height: 128px;
+    width: 128px;
+}

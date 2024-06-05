@@ -1,1 +1,41 @@
-{{outlet}}
+<header>
+    <nav class="navbar">
+        <div class="navbar-site-links">
+            <a href="#top">Home</a>
+            <a href="#top">About Me</a>
+            <a href="#top">Contact</a>
+        </div>
+        <div class="site-logo">
+            {{! -- TODO: Get a higher resolution logo from the client}}
+            <img
+                src="/assets/images/incredicoon-studios-film-logo.png"
+                alt="IncrediCoon Studios Film artwork"
+            />
+        </div>
+        <div class="navbar-social-media-links">
+            <a href="https://www.imdb.com">
+                <img src="/assets/images/imdb.svg" alt="IMDB icon" />
+            </a>
+            <a href="https://www.linkedin.com">
+                <img src="/assets/images/linkedin.svg" alt="LinkedIn icon" />
+            </a>
+            <a href="https://www.youtube.com">
+                <img src="/assets/images/youtube.svg" alt="YouTube icon" />
+            </a>
+            <a href="https://www.instagram.com">
+                <img src="/assets/images/instagram.svg" alt="Instagram icon" />
+            </a>
+            <a href="https://www.facebook.com">
+                <img src="/assets/images/facebook.svg" alt="Facebook icon" />
+            </a>
+        </div>
+    </nav>
+</header>
+
+<div>
+    {{outlet}}
+</div>
+
+<footer>
+    <div>footer filler</div>
+</footer>
