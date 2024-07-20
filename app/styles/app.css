@@ -1,6 +1,8 @@
 /* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
 body {
     background-color: #d7cbcf;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar {
@@ -8,12 +10,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .navbar-site-links {
     display: flex;
     flex: 1;
     justify-content: flex-start;
+    margin: 10px 10px;
 }
 
 .navbar-site-links > a:not(:last-child) {
@@ -24,6 +28,12 @@ body {
     display: flex;
     flex: 1;
     justify-content: flex-end;
+    margin: 10px 10px;
+}
+
+.navbar-social-media-links > a > img {
+    height: 32px;
+    width: auto;
 }
 
 .navbar-social-media-links > a:not(:first-child) {
@@ -31,6 +41,12 @@ body {
 }
 
 .site-logo img {
-    height: 128px;
-    width: 128px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    width: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
 }
