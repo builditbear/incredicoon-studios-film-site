@@ -20,6 +20,13 @@ body {
     margin: 10px 10px;
 }
 
+.navbar-site-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 16px;
+}
+
 .navbar-site-links > a:not(:last-child) {
     margin-right: 3vw;
 }
