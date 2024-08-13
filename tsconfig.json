@@ -9,9 +9,9 @@
             "incredicoon-studios-film-site/tests/*": ["tests/*"],
             "incredicoon-studios-film-site/*": ["app/*"],
             "*": ["types/*"]
-        },
-        "glint": {
-            "environment": ["ember-loose", "ember-template-imports"]
         }
+    },
+    "glint": {
+        "environment": ["ember-loose", "ember-template-imports"]
     }
 }

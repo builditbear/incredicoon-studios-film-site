@@ -1,4 +1,5 @@
-import type { TOC } from '@ember/component/template-only';
+import Component from '@glimmer/component';
+import { tracked } from '@glimmer/tracking';
 
 interface MovieSnapshotSignature {
     Args: {
@@ -13,13 +14,29 @@ interface MovieSnapshotSignature {
     Element: HTMLDivElement;
 }
 
-export default class MovieSnapshot extends TOC<MovieSnapshotSignature> {
+export default class MovieSnapshot extends Component<MovieSnapshotSignature> {
+    @tracked displayedMovie = this.args.movie;
+
     <template>
         <div class='movie-snapshot'>
-            <img src={{@movie.poster}} alt={{@movie.altText}} />
-            <span>{{@movie.productionRole}}</span>
-            <span>{{@movie.title}}</span>
-            <span>{{@movie.releaseYear}}</span>
+            <div class='movie-poster-container'>
+                <img
+                    class='movie-poster'
+                    src={{this.displayedMovie.poster}}
+                    alt={{this.displayedMovie.altText}}
+                />
+            </div>
+            <div class='movie-poster-captionbar'>
+                <span
+                    class='movie-poster-captionbar-item'
+                >{{this.displayedMovie.productionRole}}</span>
+                <span
+                    class='movie-poster-captionbar-item'
+                >{{this.displayedMovie.title}}</span>
+                <span
+                    class='movie-poster-captionbar-item'
+                >{{this.displayedMovie.releaseYear}}</span>
+            </div>
         </div>
     </template>
 }
@@ -27,6 +44,6 @@ export default class MovieSnapshot extends TOC<MovieSnapshotSignature> {
 declare module '@glint/environment-ember-loose/registry' {
     export default interface Registry {
         MovieSnapshot: typeof MovieSnapshot;
-        'moive-snapshot': typeof MovieSnapshot;
+        'movie-snapshot': typeof MovieSnapshot;
     }
 }

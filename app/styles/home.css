@@ -1,0 +1,22 @@
+.movie-poster {
+    border-radius: 0 0 10px 10px;
+    width: 100vw;
+    height: auto;
+}
+
+.movie-poster-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie-poster-captionbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.movie-poster-captionbar-item:nth-of-type(1) {
+    font-weight: bold;
+}

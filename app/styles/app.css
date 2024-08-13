@@ -17,7 +17,7 @@ body {
     display: flex;
     flex: 1;
     justify-content: flex-start;
-    margin: 10px 10px;
+    margin: 10px;
 }
 
 .navbar-site-links a {
@@ -35,16 +35,7 @@ body {
     display: flex;
     flex: 1;
     justify-content: flex-end;
-    margin: 10px 10px;
-}
-
-.navbar-social-media-links > a > img {
-    height: 32px;
-    width: auto;
-}
-
-.navbar-social-media-links > a:not(:first-child) {
-    margin-left: 1vw;
+    margin: 10px;
 }
 
 .site-logo img {
@@ -56,4 +47,13 @@ body {
     border-radius: 50%;
     overflow: hidden;
     transform: translate(-50%, -50%);
+}
+
+.navbar-social-media-links > a > img {
+    height: 32px;
+    width: auto;
+}
+
+.navbar-social-media-links > a:not(:first-child) {
+    margin-left: 1vw;
 }

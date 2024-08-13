@@ -2,11 +2,11 @@ import Route from '@ember/routing/route';
 export default class HomeRoute extends Route {
     model() {
         return {
-            poster: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg',
-            altText: 'Banana Varieties',
+            poster: 'assets/images/movie-tile-thumbnails/diogenes.png',
+            altText: 'Diogenes movie poster featuring Diogenes the Cat.',
             productionRole: 'Director',
-            title: 'The Art of the Banana',
-            releaseYear: '2020',
+            title: 'Diogenes',
+            releaseYear: '2022',
         };
     }
 }

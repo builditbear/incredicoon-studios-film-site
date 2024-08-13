@@ -9,5 +9,7 @@ module.exports = function (defaults) {
         // Add options here
     });
 
+    app.import('app/styles/home.css');
+
     return app.toTree();
 };
