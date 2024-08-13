@@ -1,21 +1,23 @@
 import Component from '@glimmer/component';
 import { tracked } from '@glimmer/tracking';
 
-interface MovieSnapshotSignature {
+interface MovieSignature {
+    poster: string;
+    altText: string;
+    productionRole: string;
+    title: string;
+    releaseYear: string;
+}
+
+interface MovieReelSignature {
     Args: {
-        movie: {
-            poster: string;
-            altText: string;
-            productionRole: string;
-            title: string;
-            releaseYear: string;
-        };
+        movieStills: MovieSignature[];
     };
     Element: HTMLDivElement;
 }
 
-export default class MovieSnapshot extends Component<MovieSnapshotSignature> {
-    @tracked displayedMovie = this.args.movie;
+export default class MovieReel extends Component<MovieReelSignature> {
+    @tracked displayedMovie = this.args.movieStills[0];
 
     <template>
         <div class='movie-snapshot'>
@@ -43,7 +45,7 @@ export default class MovieSnapshot extends Component<MovieSnapshotSignature> {
 
 declare module '@glint/environment-ember-loose/registry' {
     export default interface Registry {
-        MovieSnapshot: typeof MovieSnapshot;
-        'movie-snapshot': typeof MovieSnapshot;
+        MovieSnapshot: typeof MovieReel;
+        'movie-snapshot': typeof MovieReel;
     }
 }
