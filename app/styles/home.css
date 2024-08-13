@@ -17,6 +17,11 @@
     margin-top: 10px;
 }
 
+.movie-poster-captionbar-item {
+    font-size: 32px;
+}
+
 .movie-poster-captionbar-item:nth-of-type(1) {
     font-weight: bold;
+    text-shadow: 2px 2px 5px rgb(0 0 0 / 50%);
 }

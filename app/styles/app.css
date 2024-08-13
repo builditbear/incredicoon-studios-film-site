@@ -1,8 +1,11 @@
 /* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
+@import url("fonts.css");
+
 body {
     background-color: #d7cbcf;
     margin: 0;
     padding: 0;
+    font-family: RawengulkSans, sans-serif;
 }
 
 .navbar {
