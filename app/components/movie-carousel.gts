@@ -14,10 +14,14 @@ interface MovieCarouselSignature {
 
 export default class MovieCarousel extends Component<MovieCarouselSignature> {
     <template>
-        <span>Projects</span>
-        {{#each @movieTiles as |movieTile|}}
-            <MovieCarouselCard @movieTile={{movieTile}} />
-        {{/each}}
+        <div class='movie-carousel' ...attributes>
+            <span class='movie-carousel-header'>Projects</span>
+            <div class='movie-carousel-content'>
+                {{#each @movieTiles as |movieTile|}}
+                    <MovieCarouselCard @movieTile={{movieTile}} />
+                {{/each}}
+            </div>
+        </div>
     </template>
 }
 

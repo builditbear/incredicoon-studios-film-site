@@ -1,0 +1,21 @@
+.movie-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.movie-carousel-content {
+    display: flex;
+    overflow-x: scroll;
+    white-space: nowrap;
+    padding: 20px 20px 20px 0;
+    gap: 25px;
+}
+
+.movie-carousel-header {
+    transform-origin: center;
+    transform: rotate(-90deg);
+    display: inline-block;
+    flex: 0 0 50px;
+    font-size: 30px;
+}

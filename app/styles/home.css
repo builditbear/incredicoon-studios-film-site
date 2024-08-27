@@ -1,7 +1,6 @@
 .movie-poster {
-    border-radius: 0 0 10px 10px;
     width: 100vw;
-    height: auto;
+    height: 87vh;
 }
 
 .movie-poster-container {
@@ -18,7 +17,7 @@
 }
 
 .movie-poster-captionbar-item {
-    font-size: 32px;
+    font-size: 30px;
 }
 
 .movie-poster-captionbar-item:nth-of-type(1) {

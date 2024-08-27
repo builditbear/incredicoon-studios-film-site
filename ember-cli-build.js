@@ -7,6 +7,9 @@ module.exports = function (defaults) {
         'ember-cli-babel': { enableTypeScriptTransform: true },
 
         // Add options here
+        minifyCSS: {
+            options: { processImport: true },
+        },
         sourcemaps: {
             enabled: true,
             extensions: ['js'],
