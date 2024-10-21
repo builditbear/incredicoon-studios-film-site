@@ -1,6 +1,7 @@
 .movie-poster {
     width: 100vw;
     height: 87vh;
+    object-fit: cover;
 }
 
 .movie-poster-container {
@@ -17,7 +18,7 @@
 }
 
 .movie-poster-captionbar-item {
-    font-size: 30px;
+    font-size: var(--header-font-size);
 }
 
 .movie-poster-captionbar-item:nth-of-type(1) {

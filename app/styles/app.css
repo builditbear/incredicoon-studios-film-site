@@ -4,6 +4,11 @@
 @import url("movie-carousel.css");
 @import url("movie-carousel-card.css");
 
+:root {
+    --header-font-size: 30px;
+    --navbar-font-size: 25px;
+}
+
 body {
     background-color: #d7cbcf;
     margin: 0;
@@ -29,8 +34,8 @@ body {
 .navbar-site-links a {
     color: white;
     text-decoration: none;
-    font-weight: normal;
-    font-size: 16px;
+    font-weight: bolder;
+    font-size: var(--navbar-font-size);
 }
 
 .navbar-site-links > a:not(:last-child) {
