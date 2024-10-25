@@ -1,9 +1,9 @@
 <header>
     <nav class="navbar">
         <div class="navbar-site-links">
-            <a href="#top">Home</a>
-            <a href="#top">About Me</a>
-            <a href="#top">Contact</a>
+            <LinkTo @route="home">Home</LinkTo>
+            <LinkTo @route="about-me">About Me</LinkTo>
+            <LinkTo @route="contact">Contact</LinkTo>
         </div>
         <div class="site-logo">
             {{! -- TODO: Get a higher resolution logo from the client}}
