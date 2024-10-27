@@ -1,0 +1,39 @@
+.about-me-container {
+    display: grid;
+    grid:
+        "authors-letter-header resume-link"
+        "authors-letter photo-of-author"
+        "about-the-author about-the-author"
+        / 3fr 2fr;
+    column-gap: 20px;
+    margin: 0 5vw;
+}
+
+.about-me-container > header {
+    grid-area: authors-letter-header;
+    font-weight: bold;
+    font-size: var(--header-font-size);
+}
+
+.about-me-container > a {
+    grid-area: resume-link;
+    font-size: var(--header-font-size);
+    place-self: center;
+}
+
+.about-me-container > article {
+    grid-area: authors-letter;
+    font-size: var(--header-font-size);
+}
+
+.about-me-container > img {
+    grid-area: photo-of-author;
+    display: block;
+    width: 100%;
+}
+
+.about-me-container > footer {
+    grid-area: about-the-author;
+    font-weight: bold;
+    font-size: var(--header-font-size);
+}
