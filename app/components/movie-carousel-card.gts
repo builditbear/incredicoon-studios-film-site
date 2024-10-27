@@ -1,4 +1,5 @@
 import Component from '@glimmer/component';
+import { LinkTo } from '@ember/routing';
 
 interface MovieTile {
     titleCard: string;
@@ -17,7 +18,9 @@ export default class MovieCarouselCard extends Component<MovieCarouselCardSignat
     }
     <template>
         <div class='movie-carousel-card'>
-            <img class='movie-tile' src={{this.titleCard}} />
+            <LinkTo @route='movie' @model={{'1'}}>
+                <img class='movie-tile' src={{this.titleCard}} />
+            </LinkTo>
         </div>
     </template>
 }

@@ -7,7 +7,8 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function () {
-  this.route('home');
-  this.route('about-me');
-  this.route('contact');
+    this.route('home');
+    this.route('about-me');
+    this.route('contact');
+    this.route('movie', { path: '/movies/:movie_id' });
 });
